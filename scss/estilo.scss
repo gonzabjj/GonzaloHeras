@@ -1,0 +1,249 @@
+$colorbg: #f2f2f2;
+$colorbr: #642a73;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;;
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: $colorbr;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.alinear{
+    font-size:x-large;
+}
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #373B44;  /* fallback for old browsers */
+background: linear-gradient(to right, hsla(217, 89%, 61%, 0.315), #373B44), url(../img/Portada.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, hsla(217, 89%, 61%, 0.315), #373B44), url(../img/Portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .texto-header{
+        display: flex;
+        height: 430px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        color: white;
+    }
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+    a{
+        color: white;
+        font-weight: 300;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.contenedor--sobre-mi{
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagen-about-us{
+    width: 50%;
+    height: 50%;
+    margin-right: 4rem;
+}
+.sobre-mi .contenido-textos{
+    width: 48%;
+}
+.contenido-textos h3{
+    margin-bottom: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+.contenido-textos h3 span{
+    background: $colorbr;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba($color: #4d0686, $alpha: 1.0);
+    margin-right: 5px;
+}
+.contenido-textos p{
+    padding: 0 0 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.portafolio{
+    background-color: $colorbg;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-port{
+    width: 15rem;
+    height: 15%;
+    margin-bottom: 10px;
+    p{
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: x-large;
+    }
+}
+
+.imagen-port img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.cards1{
+    display: flex;
+    justify-content: space-evenly;
+    .card1{
+        background: $colorbr;
+        display: flex;
+        width: 46%;
+        height: 200px;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 5px;
+        box-shadow: 0 0 6px 0 rgba($color: #000000, $alpha: 0.6);
+        .contenido-texto-card{
+            width: 60%;
+            color: white;
+            p{
+                font-weight: 300;
+                padding-top: 5px;
+            }
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 3px solid white;
+            border-radius: 50%;
+            display: block;
+        }
+    }
+}
+
+.presentation{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    padding: 0;
+    text-align: center;
+    background-color: $colorbg;
+    .presentation_picture{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-top: 3rem;
+        margin-bottom: 10px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .presentation_copy{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .presentation_cta{
+        display: inline-block;
+        margin-top: 30px;
+        background: $colorbr;
+        color: white;
+        text-decoration: none;
+        border-radius: 40px;
+        padding: 3px;
+        margin-bottom: 2rem;
+    }
+}
+
+footer{
+    background-color: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+    .contenedor-footer{
+        display: flex;
+        width: 90%;
+        justify-content: space-evenly;
+        margin: auto;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #ccc;
+        .content-foo{
+            text-align: center;
+            h4{
+                color: white;
+                border-bottom: 3px solid $colorbr;
+                padding-bottom: 5px;
+                margin-bottom: 10px;
+            }
+            p{
+                color: #ccc;
+            }
+        }
+        }
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+@media screen and (max-width:768px){
+    .cards1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .card1{
+            width: 90%;
+        }
+        .card1:first-child{
+            margin-bottom: 30px;
+        }
+    }
+}

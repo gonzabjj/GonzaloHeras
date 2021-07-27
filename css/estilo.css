@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.titulo {
+  color: #642a73;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.alinear {
+  font-size: x-large;
+}
+
+header {
+  width: 100%;
+  height: 600px;
+  background: #373B44;
+  /* fallback for old browsers */
+  background: -webkit-gradient(linear, left top, right top, from(rgba(67, 135, 244, 0.315)), to(#373B44)), url(../img/Portada.jpg);
+  background: linear-gradient(to right, rgba(67, 135, 244, 0.315), #373B44), url(../img/Portada.jpg);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(67, 135, 244, 0.315), #373B44), url(../img/Portada.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+header h1 {
+  font-size: 50px;
+}
+
+header h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+header .texto-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 430px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+nav {
+  text-align: right;
+  padding: 30px 50px 0 0;
+}
+
+nav a {
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.contenedor--sobre-mi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.imagen-about-us {
+  width: 50%;
+  height: 50%;
+  margin-right: 4rem;
+}
+
+.sobre-mi .contenido-textos {
+  width: 48%;
+}
+
+.contenido-textos h3 {
+  margin-bottom: 15px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.contenido-textos h3 span {
+  background: #642a73;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  -webkit-box-shadow: 0 0 6px 0 #4d0686;
+          box-shadow: 0 0 6px 0 #4d0686;
+  margin-right: 5px;
+}
+
+.contenido-textos p {
+  padding: 0 0 30px 15px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.portafolio {
+  background-color: #f2f2f2;
+}
+
+.galeria-port {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.imagen-port {
+  width: 15rem;
+  height: 15%;
+  margin-bottom: 10px;
+}
+
+.imagen-port p {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: x-large;
+}
+
+.imagen-port img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.cards1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.cards1 .card1 {
+  background: #642a73;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 46%;
+  height: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards1 .card1 .contenido-texto-card {
+  width: 60%;
+  color: white;
+}
+
+.cards1 .card1 .contenido-texto-card p {
+  font-weight: 300;
+  padding-top: 5px;
+}
+
+.cards1 .card1 img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid white;
+  border-radius: 50%;
+  display: block;
+}
+
+.presentation {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  padding: 0;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.presentation .presentation_picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 3rem;
+  margin-bottom: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.presentation .presentation_copy {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.presentation .presentation_cta {
+  display: inline-block;
+  margin-top: 30px;
+  background: #642a73;
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  padding: 3px;
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: #414141;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+footer .contenedor-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+footer .contenedor-footer .content-foo {
+  text-align: center;
+}
+
+footer .contenedor-footer .content-foo h4 {
+  color: white;
+  border-bottom: 3px solid #642a73;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+footer .contenedor-footer .content-foo p {
+  color: #ccc;
+}
+
+.titulo-final {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  color: #9e9797;
+}
+
+@media screen and (max-width: 768px) {
+  .cards1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cards1 .card1 {
+    width: 90%;
+  }
+  .cards1 .card1:first-child {
+    margin-bottom: 30px;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */
