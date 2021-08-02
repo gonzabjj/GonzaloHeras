@@ -1,3 +1,7 @@
+:root {
+  --colorTexto: #642a73;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -316,9 +320,142 @@ footer .contenedor-footer .content-foo p {
   }
   .cards1 .card1 {
     width: 90%;
+    font-size: small;
   }
   .cards1 .card1:first-child {
     margin-bottom: 30px;
   }
+  .form {
+    width: 80%;
+  }
+  .contenedor-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .contenedor--sobre-mi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .contenido-textos p {
+    text-align: center;
+  }
+  .sobre-mi .contenido-textos {
+    width: 100%;
+  }
+  .imagen-about-us {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+  }
+}
+
+form {
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: auto;
+}
+
+form .grupo {
+  position: relative;
+  margin: 45px;
+}
+
+form .grupo .barra {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+form input {
+  background: none;
+  color: #c6c6c6;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--colorTexto);
+}
+
+form label {
+  color: var(--colorTexto);
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  top: 10px;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  pointer-events: none;
+}
+
+form button {
+  font-family: 'Montserrat', sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(67, 135, 244, 0.315)), to(#373B44));
+  background: linear-gradient(to right, rgba(67, 135, 244, 0.315), #373B44);
+  border: none;
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  color: white;
+  height: 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+  color: #5e5d5d;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -14px;
+  font-size: 12px;
+  color: #642a73;
+}
+
+.barra::before {
+  content: "";
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(67, 135, 244, 0.315)), to(#373B44));
+  background: linear-gradient(to right, rgba(67, 135, 244, 0.315), #373B44);
+  -webkit-transition: 0.3s ease width;
+  transition: 0.3s ease width;
+  left: 0;
+}
+
+input:focus ~ .barra::before {
+  width: 100%;
 }
 /*# sourceMappingURL=estilo.css.map */

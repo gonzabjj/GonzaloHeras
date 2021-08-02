@@ -1,3 +1,6 @@
+:root{
+    --colorTexto: #642a73;
+}
 $colorbg: #f2f2f2;
 $colorbr: #642a73;
 
@@ -7,7 +10,7 @@ $colorbr: #642a73;
     box-sizing: border-box;
 }
 body{
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
 }
 .contenedor{
     padding: 60px 0;
@@ -31,8 +34,8 @@ header{
     width: 100%;
     height: 600px;
     background: #373B44;  /* fallback for old browsers */
-background: linear-gradient(to right, hsla(217, 89%, 61%, 0.315), #373B44), url(../img/Portada.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, hsla(217, 89%, 61%, 0.315), #373B44), url(../img/Portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, hsla(217, 89%, 61%, 0.315), #373B44), url(../img/Portada.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(217, 89%, 61%, 0.315), #373B44), url(../img/Portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -241,9 +244,113 @@ footer{
         align-items: center;
         .card1{
             width: 90%;
+            font-size: small;
         }
         .card1:first-child{
             margin-bottom: 30px;
         }
     }
+    .form{
+        width: 80%;
+    }
+    .contenedor-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .contenedor--sobre-mi{
+        display: flex;
+        flex-direction:column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+    .contenido-textos p{
+        text-align: center;
+    }
+    .sobre-mi .contenido-textos{
+        width: 100%;
+    }
+    .imagen-about-us{
+        width: 50%;
+        height: 50%;
+        margin: 0 auto;
+    }
+}
+
+form{
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    .grupo{
+        position: relative;
+        margin: 45px;
+        .barra{
+            position: relative;
+            display: block;
+            width: 100%;
+        }
+    }
+    input{
+        background: none;
+        color: #c6c6c6;
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid var(--colorTexto);
+    }
+    label{
+        color: var(--colorTexto);
+        font-size: 16px;
+        position: absolute;
+        bottom: 0;
+        left: 5px;
+        top: 10px;
+        transition: 0.5s ease all;
+        pointer-events: none;
+    }
+    button{
+        font-family: 'Montserrat', sans-serif;
+        background: linear-gradient(to right, hsla(217, 89%, 61%, 0.315), #373B44);
+        border: none;
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        color: white;
+        height: 40px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+
+input:focus{
+    outline: none;
+    color: #5e5d5d;
+}
+
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: $colorbr;
+}
+
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, hsla(217, 89%, 61%, 0.315), #373B44);
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before{
+    width: 100%;
 }
