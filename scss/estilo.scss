@@ -212,6 +212,7 @@ footer{
         display: flex;
         width: 90%;
         justify-content: space-evenly;
+        align-items: center;
         margin: auto;
         padding-bottom: 50px;
         border-bottom: 1px solid #ccc;
@@ -275,6 +276,15 @@ footer{
         width: 50%;
         height: 50%;
         margin: 0 auto;
+    }
+    .contenedorCarrou{
+        padding: 0px 0;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap
     }
 }
 
@@ -353,4 +363,43 @@ input:valid~label{
 
 input:focus~.barra::before{
     width: 100%;
+}
+
+.tituloPro{
+    font-weight: bold;
+    color: $colorbr;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contenedor{
+    .contenedorCarrou{
+        padding: 0px 0;
+        width: 50%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap
+    }
+    .parrafoPro{
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+.tituloPlo{
+    font-weight: bold;
+    color: $colorbr;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.tituloUx{
+    font-weight: bold;
+    color: $colorbr;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 60px;
 }

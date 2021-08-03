@@ -278,6 +278,9 @@ footer .contenedor-footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
   padding-bottom: 50px;
   border-bottom: 1px solid #ccc;
@@ -364,6 +367,20 @@ footer .contenedor-footer .content-foo p {
     width: 50%;
     height: 50%;
     margin: 0 auto;
+  }
+  .contenedorCarrou {
+    padding: 0px 0;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -457,5 +474,48 @@ input:valid ~ label {
 
 input:focus ~ .barra::before {
   width: 100%;
+}
+
+.tituloPro {
+  font-weight: bold;
+  color: #642a73;
+  font-size: 30px;
+  text-align: center;
+}
+
+.contenedor .contenedorCarrou {
+  padding: 0px 0;
+  width: 50%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contenedor .parrafoPro {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.tituloPlo {
+  font-weight: bold;
+  color: #642a73;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.tituloUx {
+  font-weight: bold;
+  color: #642a73;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 60px;
 }
 /*# sourceMappingURL=estilo.css.map */
