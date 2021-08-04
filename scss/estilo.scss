@@ -15,7 +15,7 @@ body{
 .contenedor{
     padding: 60px 0;
     width: 90%;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     overflow: hidden;
 }
@@ -24,6 +24,7 @@ body{
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
+    font-weight: bold;
 }
 
 .alinear{
@@ -286,6 +287,14 @@ footer{
         justify-content: space-evenly;
         flex-wrap: wrap
     }
+    
+    .about{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        justify-items: center;
+        align-items: center;
+    }
 }
 
 form{
@@ -402,4 +411,28 @@ input:focus~.barra::before{
     font-size: 30px;
     text-align: center;
     padding-top: 60px;
+}
+
+.about{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    justify-items: center;
+    align-items: center;
+    .about__img{
+        text-align: center;
+    }
+    .about__img--left{
+        text-align: left;
+    }
+    .about__picture{
+        max-width: 80%;
+    }
+    .about__paragraph{
+        margin-bottom: 20px;
+        line-height: 1.5;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+    }
 }

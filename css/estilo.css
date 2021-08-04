@@ -16,7 +16,7 @@ body {
 .contenedor {
   padding: 60px 0;
   width: 90%;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   overflow: hidden;
 }
@@ -26,6 +26,7 @@ body {
   font-size: 30px;
   text-align: center;
   margin-bottom: 60px;
+  font-weight: bold;
 }
 
 .alinear {
@@ -382,6 +383,17 @@ footer .contenedor-footer .content-foo p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 10px;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 form {
@@ -517,5 +529,37 @@ input:focus ~ .barra::before {
   font-size: 30px;
   text-align: center;
   padding-top: 60px;
+}
+
+.about {
+  min-height: 400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about__img {
+  text-align: center;
+}
+
+.about .about__img--left {
+  text-align: left;
+}
+
+.about .about__picture {
+  max-width: 80%;
+}
+
+.about .about__paragraph {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
 }
 /*# sourceMappingURL=estilo.css.map */
