@@ -14,7 +14,7 @@ body {
 }
 
 .contenedor {
-  padding: 60px 0;
+  padding: 30px 0;
   width: 90%;
   max-width: 1100px;
   margin: auto;
@@ -38,10 +38,10 @@ header {
   height: 600px;
   background: #373B44;
   /* fallback for old browsers */
-  background: -webkit-gradient(linear, left top, right top, from(rgba(67, 135, 244, 0.315)), to(#373B44)), url(../img/Portada.jpg);
-  background: linear-gradient(to right, rgba(67, 135, 244, 0.315), #373B44), url(../img/Portada.jpg);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(67, 135, 244, 0.315)), to(#373b448e)), url(../img/Portada.jpg);
+  background: linear-gradient(to right, rgba(67, 135, 244, 0.315), #373b448e), url(../img/Portada.jpg);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(67, 135, 244, 0.315), #373B44), url(../img/Portada.jpg);
+  background: linear-gradient(to right, rgba(67, 135, 244, 0.315), #373b448e), url(../img/Portada.jpg);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
@@ -181,7 +181,7 @@ nav a {
   margin-bottom: 2rem;
 }
 
-.cards1 {
+.cardsM {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,7 +190,7 @@ nav a {
           justify-content: space-evenly;
 }
 
-.cards1 .card1 {
+.cardsM .cardM {
   background: #642a73;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,17 +208,17 @@ nav a {
           box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
 }
 
-.cards1 .card1 .contenido-texto-card {
+.cardsM .cardM .contenido-texto-card {
   width: 60%;
   color: white;
 }
 
-.cards1 .card1 .contenido-texto-card p {
+.cardsM .cardM .contenido-texto-card p {
   font-weight: 300;
   padding-top: 5px;
 }
 
-.cards1 .card1 img {
+.cardsM .cardM img {
   width: 100px;
   height: 100px;
   -o-object-fit: cover;
@@ -260,7 +260,7 @@ nav a {
   color: white;
   text-decoration: none;
   border-radius: 40px;
-  padding: 3px;
+  padding: 10px;
   margin-bottom: 2rem;
 }
 
@@ -275,7 +275,7 @@ footer .contenedor-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
+  width: 70%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -310,7 +310,7 @@ footer .contenedor-footer .content-foo p {
 }
 
 @media screen and (max-width: 768px) {
-  .cards1 {
+  .cardsM {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -322,11 +322,11 @@ footer .contenedor-footer .content-foo p {
         -ms-flex-align: center;
             align-items: center;
   }
-  .cards1 .card1 {
+  .cardsM .cardM {
     width: 90%;
     font-size: small;
   }
-  .cards1 .card1:first-child {
+  .cardsM .cardM:first-child {
     margin-bottom: 30px;
   }
   .form {
@@ -516,6 +516,7 @@ input:focus ~ .barra::before {
 }
 
 .tituloPlo {
+  margin: 5px;
   font-weight: bold;
   color: #642a73;
   font-size: 30px;
@@ -561,5 +562,119 @@ input:focus ~ .barra::before {
   line-height: 1.5;
   font-weight: 300;
   font-family: 'Montserrat', sans-serif;
+}
+
+.containercard {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.containercard .card {
+  background-color: #f2f2f2;
+  width: 330px;
+  height: auto;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.containercard .card img {
+  width: 100%;
+  height: auto;
+}
+
+.containercard .card h3 {
+  margin: 1rem;
+  font-weight: 600;
+}
+
+.containercard .card p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.containercard .card a {
+  width: 25%;
+  font-weight: 500;
+  text-decoration: none;
+  color: #642a73;
+  margin: 2rem;
+}
+
+.containercard .card:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.social-bar {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  z-index: 100;
+}
+
+.social-bar .icon {
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: .7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.social-bar .icon:hover {
+  padding-right: 3rem;
+  border-radius: 1rem 0 0 1rem;
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42);
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42);
+}
+
+.social-bar .icon-behance {
+  background: black;
+}
+
+.social-bar .icon-whatsapp {
+  background: #00bb2d;
+  border-radius: 1rem 0 0 0;
+}
+
+.social-bar .icon-telegram {
+  background: #0088cc;
+}
+
+.social-bar .icon-linkedin2 {
+  background: #0e76a8;
+  border-radius: 0 0 0 1rem;
 }
 /*# sourceMappingURL=estilo.css.map */
